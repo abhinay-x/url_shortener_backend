@@ -11,7 +11,7 @@ const corsOptions = {
       'http://localhost:5174',
       'http://127.0.0.1:3000',
       'http://127.0.0.1:5173',
-      'https://url-shortener-main.vercel.app', // Deployed frontend URL
+      'https://url-shortener-main.vercel.app',
       ...(process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : [])
     ].filter(Boolean);
     
